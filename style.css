@@ -1,0 +1,92 @@
+
+*{
+  padding: 0;
+  
+}.overall{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:hsl(186, 14%, 43%) ;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.inputcontainer{
+  padding: 5px;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+.bill{
+  font-size: 20px;
+  padding-bottom: 0.25em;
+}
+.people-image{
+  width: 5%;
+  padding-left: 13px;
+  margin: auto;
+}
+.people-button{
+  border: none;
+  padding: 5px;
+  border-radius: 7px;
+  font-weight: bold;
+  background-color:hsl(172, 67%, 45%) ;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+.people_label{
+  margin-bottom: 7.5px;
+}
+.number{
+  padding: 6px;
+  font-weight: bold;
+  font-size: large;
+}
+.right-hand-container{
+  padding: 20px 40px;
+  margin-left: 50px;
+  background-color: black;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+.totalDiv{
+  color: white;
+  margin-bottom: 5px;
+}
+.amountDiv{
+  color: hsl(172, 67%, 45%);
+  margin-bottom: 15px;
+}
+.reset-button{
+  margin-top: 40px;
+  background-color: hsl(172, 67%, 45%);
+  padding: 6px 50px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  transition: background-color 0.25s ,color 0.25s, border-color 0.25s;
+}
+.reset-button:hover{
+  background-color: black;
+  color: hsl(172, 67%, 45%) ;
+  border-color: white;
+  border-style: solid;
+}
+.reset-button:active{
+  background-color: white;
+  color: hsl(172, 67%, 45%) ;
+  border-color: hsl(156, 67%, 45%) ;
+}
+@media (max-width:450px){
+  .overall{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  .right-hand-container{
+    margin: 0;
+  }
+}

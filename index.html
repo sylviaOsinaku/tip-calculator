@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 13px; text-align: center;font-weight: bolder; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="overall">
+    <div class="left-hand-container">
+      <div class="each-cal-container">
+        <div class="bill">Bill</div>
+        <!--<img src="images/icon-dollar.svg">-->
+        <input class='inputcontainer' id="BillInput"  type="number" placeholder="$0.00" onkeyup="calculateBill()">
+      </div>
+      <div class="left-hand-container">
+        <div class="bill">Tip</div>
+        <input class="inputcontainer" id="TipInput" type="number" placeholder="%10" onkeyup="calculateBill()">
+      </div>
+      <div class="left-hand-container">
+        <div class="people_label">Number of people 
+          <img class="people-image" src="images/icon-person.svg"></div>
+<span>
+  <button class="people-button" onclick="increasePeople()">
+  <span>+</span></button>
+</span>
+<span id="numberOfPeople">0</span>
+<span>
+  <button class="people-button" onclick="decreasePeople()">
+  <span>-</span></button>
+</span>
+        
+      </div>
+    </div>
+    
+    <div class="right-hand-container">
+      <div  class="totalDiv">Tip Amount</div>
+      <div id="TipAmount"  class="amountDiv">$0.00</div>
+    
+    <div  class="totalDiv">Total Per Person</div>
+      <div id="Totalperperson" class="amountDiv">$0.00</div>
+    
+  
+    <button class="reset-button" id="reset" onclick=" Bill_reset()">Reset</button>
+    </div>
+  </div>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Osinaku Sylvia Ugonna</a>.
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
